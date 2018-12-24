@@ -15,7 +15,7 @@ export class ExpenseListFilters extends React.Component {
         this.setState(() => ({ calendarFocused }))
     }
     onTextChange = (e) => {
-        this.props.setTextFilter(e.target)
+        this.props.setTextFilter(e.target.value)
     }
     onSortChange = (e) => {
         if (e.target.value === 'date') {

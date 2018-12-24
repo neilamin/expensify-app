@@ -40,7 +40,7 @@ test('should handle text change', () => {
     wrapper.find('input').simulate('change', {
         target: {value}
     })
-    expect(setTextFilter).toHaveBeenLastCalledWith({ value })
+    expect(setTextFilter).toHaveBeenLastCalledWith(value)
 })
 
 test('should sort by date', () => {
